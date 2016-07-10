@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF603C881D2EA29F00AB8EB5 /* FlatColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF603C871D2EA29F00AB8EB5 /* FlatColors.swift */; };
 		AFF7F10F1D2D3BE000ED82E2 /* KLKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF7F10E1D2D3BE000ED82E2 /* KLKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFF7F1161D2D3BE100ED82E2 /* KLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF7F10B1D2D3BE000ED82E2 /* KLKit.framework */; };
 		AFF7F11B1D2D3BE100ED82E2 /* KLKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7F11A1D2D3BE100ED82E2 /* KLKitTests.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF603C871D2EA29F00AB8EB5 /* FlatColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatColors.swift; sourceTree = "<group>"; };
 		AFF7F10B1D2D3BE000ED82E2 /* KLKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KLKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF7F10E1D2D3BE000ED82E2 /* KLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLKit.h; sourceTree = "<group>"; };
 		AFF7F1101D2D3BE000ED82E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF603C891D2EA2A500AB8EB5 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				AF603C871D2EA29F00AB8EB5 /* FlatColors.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
 		AFF7F1011D2D3BE000ED82E2 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +86,7 @@
 				AFF7F10E1D2D3BE000ED82E2 /* KLKit.h */,
 				AFF7F1101D2D3BE000ED82E2 /* Info.plist */,
 				AFF7F1531D2D3C9100ED82E2 /* UIKit */,
+				AF603C891D2EA2A500AB8EB5 /* Foundation */,
 			);
 			path = KLKit;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF7F1521D2D3C6D00ED82E2 /* UIViewControllerExtension.swift in Sources */,
+				AF603C881D2EA29F00AB8EB5 /* FlatColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

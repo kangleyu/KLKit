@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="75n-ZQ-WwK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q2e-PC-7KK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Demo View Controller-->
+        <!--Master-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="DemoViewController" customModule="KLKitDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="281" y="285" width="38" height="30"/>
                                 <state key="normal" title="Show"/>
                                 <connections>
-                                    <segue destination="Isl-57-TGd" kind="show" identifier="Show Image" id="4YN-Mo-mwu"/>
+                                    <segue destination="Cp6-D1-WGJ" kind="showDetail" identifier="Show Image" id="XI8-IP-WCD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,11 +31,24 @@
                             <constraint firstItem="Plx-l1-Wmg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mvL-83-Bo4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PgH-Ha-clt"/>
+                    <navigationItem key="navigationItem" title="Master" id="PgH-Ha-clt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1185" y="339"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="qIn-h1-fqY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LF1-PX-QBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <splitViewController id="Q2e-PC-7KK" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="75n-ZQ-WwK" kind="relationship" relationship="masterViewController" id="yZN-Jw-Hfi"/>
+                        <segue destination="Cp6-D1-WGJ" kind="relationship" relationship="detailViewController" id="dLp-80-oMY"/>
+                    </connections>
+                </splitViewController>
+            </objects>
+            <point key="canvasLocation" x="-254" y="599"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="MEx-B5-KxR">
@@ -62,10 +75,11 @@
                             <constraint firstItem="4cF-fX-MSS" firstAttribute="centerY" secondItem="Kpb-ae-qdL" secondAttribute="centerY" id="Y5x-x0-sOt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aup-cF-Khf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgl-0f-Kyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1867" y="339"/>
+            <point key="canvasLocation" x="1185" y="1047"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SCn-qL-hVF">
@@ -85,5 +99,26 @@
             </objects>
             <point key="canvasLocation" x="482" y="339"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Ml-id-tpE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cp6-D1-WGJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Jd-UU-x16">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Isl-57-TGd" kind="relationship" relationship="rootViewController" id="UJ1-zs-MQQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTI-mN-OfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="1047"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XI8-IP-WCD"/>
+    </inferredMetricsTieBreakers>
 </document>
