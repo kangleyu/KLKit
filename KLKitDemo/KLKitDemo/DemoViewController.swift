@@ -14,7 +14,8 @@ class DemoViewController: UIViewController {
      override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == Constants.ShowImageSegue {
             let destvc = segue.destinationViewController.contentViewController
-            print(destvc)
+            destvc.title = "Details"
+            destvc.view.backgroundColor = UIColor.random()
         }
      }
 }
